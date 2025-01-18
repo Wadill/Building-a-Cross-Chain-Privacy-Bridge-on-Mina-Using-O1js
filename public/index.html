@@ -1,0 +1,14 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import VoteForm from '../src/components/VoteForm';
+
+const App = () => {
+  const contractAddress = '<YOUR_CONTRACT_ADDRESS>'; // Replace with deployed contract address
+  return (
+    <div>
+      <VoteForm contractAddress={contractAddress} />
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
